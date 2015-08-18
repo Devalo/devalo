@@ -2,7 +2,127 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/********** NAVIGASJON ************/ 
+.navi {
+  background-color: #fff;
+  border-radius: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  border-bottom: 1px solid white  ;
 
-.logo {
-  width: 400px;
+  .logo {
+    width: 300px;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+  }
+
+  .logo-undertekst {
+    padding-top: 2px;
+  }
+
+  .navbar-right {
+    ul {
+      margin-top: 20px;
+
+      li {
+        display: inline-block;
+        font-size: 18px;
+        padding: 3px;
+        text-transform: uppercase;
+
+
+      }
+    } 
+  }
+
+
 }
+
+
+/******** NAVIGASJON END ************/
+/*#6155b5;*/
+
+.section1 {
+
+  margin-top: none;
+  background: url(wood.png);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+
+  #slide_headline {
+    margin-top: 50px;
+    
+    background: rgba(255, 255, 255, .7);
+    font-size: 50px;
+    left: -1000px;
+    position: relative;
+    width: 32%;
+    padding: 2px;
+
+    text-align: center;
+   
+    border: 1px solid white;
+
+    
+  }
+
+  #slide_headline h1 {
+    color: #363636;
+    font-size: 50px;
+  }
+
+  #slide_p1, #slide_p2{
+    color: #363636;
+    padding: 2px;
+    width: 150px;
+    font-weight: bold;
+    font-family: sans-serif;
+    left: -1000px;
+    background: rgba(255, 255, 255, .7);
+  }
+
+  #slide_image {
+
+    padding-top: 50px;
+    background: url(lcd-screen.png);
+    width: 30%;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    left: 1000px;
+  }
+}
+
+
+.secondsection {
+  background-color: #fff;
+  height: 900px;
+}
+
+
+
+
+
+
+
+
+h1 {position:relative;}
+p {position: relative;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
