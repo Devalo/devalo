@@ -8,6 +8,11 @@ $(document).on "page:change", ->
   $('#slide_p2').delay("1100").animate(left: '30%')
   $('#slide_image').delay("800").animate(left: '30%')
     
+  $(window).scroll ->
+    scrollTop = $(window).scrollTop()
+    height = $(window).height()
+    $('.section1').css 'opacity': (height - scrollTop) / height
+    return  
     
     
 
