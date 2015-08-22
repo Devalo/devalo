@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  background-color: #fff;
+  
+}
 /********** NAVIGASJON ************/ 
 .navi {
   background-color: #fff;
@@ -46,42 +50,56 @@
 
 .section1 {
 
+
+
   margin-top: none;
-  background: url(wood.png);
+  background: url(lady2.png);
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 500px;
+  height: 600px;
+
+  
+
+  img {
+    transform: translate( 0%, -15%);  
+  }
 
   #slide_headline {
-    margin-top: 50px;
+    margin-top: 5%;
     
-    background: rgba(255, 255, 255, .7);
-    font-size: 50px;
+    background: rgba(177, 170, 230, .7);
+    
     left: -1000px;
     position: relative;
-    width: 32%;
-    padding: 2px;
+    width: 40em;
+    
 
     text-align: center;
    
-    border: 1px solid white;
+    
 
+    h1 {
+    color: #363636;
+    font-size: 65px;
+    padding: 0.5em;
+    border: 0.1em solid white;
+    word-wrap: break-word;
+  }
     
   }
 
-  #slide_headline h1 {
-    color: #363636;
-    font-size: 50px;
-  }
+   
 
   #slide_p1, #slide_p2{
     color: #363636;
     padding: 2px;
-    width: 150px;
+    width: 400px;
     font-weight: bold;
     font-family: sans-serif;
     left: -1000px;
-    background: rgba(255, 255, 255, .7);
+    background: rgba(177, 170, 230, .7);
+    position: relative;
   }
 
   #slide_image {
@@ -97,20 +115,144 @@
 }
 
 
-.secondsection {
-  background-color: #fff;
-  height: 900px;
+
+
+
+.section2 {
+  text-align: center;
+  margin-top: 34px;
+
+  
+  
+
+  .section2_first_row {
+    
+    background-color: #fff;
+    border-radius: 0px; 
+    padding: 6px;
+
+    h2, p {
+      color: #6155b5;
+    }
+    
+
+    span {
+      color: #6155b5;
+      font-size: 70px;
+    }
+  }
+
+  .section2_second_row {
+    
+    background-color: #fff;
+    border-radius: 0;
+    padding: 6px;
+
+    h2, p {
+      color: #6155b5;
+    }
+    
+
+
+     span {
+      color: #6155b5;
+      font-size: 70px;
+    }
+  }
+
+  .section2_third_row {
+    
+    background-color: #fff;
+    border-radius: 0px;
+    padding: 6px;
+
+    
+      h2, p {
+      color: #6155b5;
+    }
+  
+    
+    
+
+     span {
+      color: #6155b5;
+      font-size: 70px;
+    }
+  }
+  .section2_below {
+    margin-top: 34px;
+    background-color: #fff;
+    border-radius: 0;
+    padding: 5px;
+
+    li { list-style: none;
+
+        h1, p {
+          color: #6155b5;
+        }
+
+    }
+  }
+}
+
+
+.section3 {
+  
+  padding-bottom: 34px;
+  padding-top: 34px;
+  
+  
+  background: url(main-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(177,170,230,.93);
+
+  .features-devider {
+    border: 0;
+    height: 1px;
+    background: #B1AAE6;
+    background-image: linear-gradient(to right, #B1AAE6, #6155b5, #B1AAE6);
+    }
+
+  .features-heading {
+    color: #fff;
+    font-weight: bold;
+    padding: 2px;
+    
+  }
+
+  .features-text {
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    padding: 2px;
+  }
+
+  img {
+    border: 1px solid black;
+    margin-top: 34px;
+    margin-bottom: 34px;
+  }
+
+
+}
+
+
+footer {
+  background-color: #6155b5;
+  
+  
+
+  .footer_row {
+    margin-top: 5px;
+    
+  }
 }
 
 
 
 
 
-
-
-
-h1 {position:relative;}
-p {position: relative;}
 
 
 
