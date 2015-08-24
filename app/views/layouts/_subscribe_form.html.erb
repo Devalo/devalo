@@ -1,6 +1,6 @@
 <div class="subscribe-form">
   <%= form_for (@subscribe) do |f| %>
-    <%= f.text_field :email %>
-    <%= f.submit %>
+    <%= f.text_field :email, placeholder: " E-post", class: "subscribe_text" %><br>
+    <%= f.submit "Meld deg på", class: "btn btn-default subscribe_button" %>
   <% end %>
 </div>
