@@ -1,0 +1,36 @@
+<!-- modal som popper opp om nyhetsbrevet ikke er riktig signert -->
+<div class="modal fade" id="subscribe_modal_error">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Påmelding nyhetsbrev</h4>
+      </div>
+      <div class="modal-body">
+        <p>Noe gikk galt.</p>
+        <p>Eposten er enten ikke skrevet inn riktig, eller er allerede i bruk.</p>
+        <%= render 'layouts/subscribe_form' %>
+      </div> 
+    </div>
+  </div>
+</div>
+<!-- modal som popper opp om nyhetsbrevet blir riktig signert -->
+<div class="modal fade" id="subscribe_modal_success">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Påmelding nyhetsbrev</h4>
+      </div>
+      <div class="modal-body">
+        <p>Du er nå meldt på vårt nyhetsbrev, og vil få gode tilbud og nyheter på mail.</p>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Lukk</button>
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+      

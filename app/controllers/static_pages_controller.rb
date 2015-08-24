@@ -13,5 +13,7 @@ class StaticPagesController < ApplicationController
 
   def set_up_shared_instance_variables
     @subscribe = Subscribe.new 
+   
   end
 end
+

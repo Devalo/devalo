@@ -1,8 +1,14 @@
+
+      <%= flash_notices %>
+      <%= render 'shared/subscribe_modal' %>
+
+
 <div class="mainsection">
 
   <div class="section1 hidden-sm hidden-xs">
   <div class="row">
     <div class="col-sm-12">
+    
       <div id="slide_headline"><h1>RESPONSIVE NETTSIDER</h1>
       </div>
 
@@ -14,9 +20,7 @@
 </div>
 <div class="container section2">
 
-<% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-      <% end %>
+
   <div class="row">
     <div class="col-md-4">
       <div class="section2_first_row">
