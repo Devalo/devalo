@@ -14,7 +14,9 @@
 </div>
 <div class="container section2">
 
-
+<% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
   <div class="row">
     <div class="col-md-4">
       <div class="section2_first_row">

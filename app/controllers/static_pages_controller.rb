@@ -2,8 +2,16 @@ class StaticPagesController < ApplicationController
  
 
   def index
-    @subscribe = Subscribe.new
+    set_up_shared_instance_variables
   end
 
 
+
+
+
+ private
+
+  def set_up_shared_instance_variables
+    @subscribe = Subscribe.new 
+  end
 end
