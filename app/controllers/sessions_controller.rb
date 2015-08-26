@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
 
   def new
     set_up_shared_instance_variables
-    if :require_user 
+    if logged_in? 
       flash[:alert] = "Du er allerede logget inn."
       redirect_to root_path
     end
