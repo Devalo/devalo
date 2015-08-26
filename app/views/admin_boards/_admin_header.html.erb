@@ -6,13 +6,13 @@
     <div>
       <ul class="nav navbar-nav">
         <li class="active"><%= link_to 'Forside', admin_path %></li>
-        <li><a href="#">Brukere</a></li>
+        <li><%= link_to 'Brukere', admin_brukere_path %></li>
         <li><%= link_to 'Nyhetsbrev', admin_nyhetsbrev_path %></li>
-        <li><a href="#">Forespørsler</a></li>
+        <li><%= link_to 'Forespørsler', admin_forsporsel_path %></li>
         <li><a href="#">Blogg</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Tilbake til Devalo</a></li>
+        <li><%= link_to 'Tilbake til Devalo', root_path %></li>
         <li><%= link_to "Logg ut", logout_path, method: :delete %></li> 
       </ul>
        

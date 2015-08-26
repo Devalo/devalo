@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users
+  resources :users 
   resources :static_pages 
   resources :subscribes
   resources :sessions, only: [:new, :create]
@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   delete "/logout" => "sessions#destroy", as: :logout
 
   get 'admin' => 'admin_boards#index'
-  get 'admin/nyhetsbrev' => 'admin_boards#nyhetsbrev'
-  get 'admin/brukere' => 'admin_boards#brukere'
+  get 'admin/nyhetsbrev' => 'subscribes#index'
+  get 'admin/brukere' => 'users#index'
   get 'admin/forsporsel' => 'admin_boards#foresporsel'
 
   root 'static_pages#index'   
