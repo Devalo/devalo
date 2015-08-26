@@ -10,6 +10,10 @@
 </head>
 <body>
 <%= render 'layouts/header' %>
+<% if signed_in? %>
+  <li>Logget inn som <%= link_to current_user.email, current_user %></li>
+  <li><%= link_to "Logg ut", logout_path, method: :delete %></li>
+<% end %>
 <%= yield %>
 <%= render 'layouts/footer' %>
  

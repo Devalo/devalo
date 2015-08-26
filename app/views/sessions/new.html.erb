@@ -1,0 +1,31 @@
+<div class="container">
+<h2>Innlogging</h2>
+<% flash.each do |type, message| %>
+  <div class="alert flash <%= type %>">
+  <%= message %>
+    </div>
+  <% end %>
+
+
+  <%= form_tag sessions_path do %>
+    <div class="innlogging">
+      
+        <%= label_tag :email, "Epost" %><br>
+      
+        <%= text_field_tag :email, params[:email], 
+            class: "innlogging_field" %><br>
+      
+
+ 
+        
+          <p><%= label_tag :password, "Passord" %><br>
+        
+        <%= password_field_tag :password, nil, class: "innlogging_field" %><br>
+      
+
+    
+        <%= submit_tag "Logg inn", class: "innlogging_submit" %>
+    
+   </div>
+  <% end %>
+</div>

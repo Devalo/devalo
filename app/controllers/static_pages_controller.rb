@@ -5,15 +5,16 @@ class StaticPagesController < ApplicationController
     set_up_shared_instance_variables
   end
 
+  def prosessen
+    set_up_shared_instance_variables
+  end
+
 
 
 
 
  private
 
-  def set_up_shared_instance_variables
-    @subscribe = Subscribe.new 
-   
-  end
+ 
 end
 

@@ -1,0 +1,34 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+h2 {
+  font-family: 'Play', sans-serif; font-weight: 700;
+}
+
+.innlogging {
+ 
+position:relative;
+
+
+font-family: 'Play', sans-serif;
+font-size: 14px;
+
+line-height: 24px;
+font-weight: bold;
+color: #09C;
+text-decoration: none;
+padding: 3px;
+margin: 5px;
+  
+  .innlogging_submit {
+    margin-top: 5px;
+    padding: 3px;
+  }
+
+  .innlogging_field 
+  { width: 20%;}
+  
+
+}

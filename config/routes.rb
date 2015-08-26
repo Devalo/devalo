@@ -1,13 +1,22 @@
 Rails.application.routes.draw do
+  resources :users
   resources :static_pages 
   resources :subscribes
+  resources :sessions, only: [:new, :create]
+
+  get "/login" => "sessions#new", as: :login
+  delete "/logout" => "sessions#destroy", as: :logout
+
+  root 'static_pages#index'   
+  get 'prosessen' => 'static_pages#prosessen'
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'static_pages#index'
    
-   get 'prosessen' => 'static_pages#prosessen'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
