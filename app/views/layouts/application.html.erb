@@ -12,6 +12,7 @@
 <%= render 'layouts/header' %>
 <% if logged_in? %>
   <li>Logget inn som <%= link_to current_user.email, current_user %></li>
+  <li><%= link_to "Adminpanel", admin_path %></li>
   <li><%= link_to "Logg ut", logout_path, method: :delete %></li>
 <% end %>
 <%= yield %>

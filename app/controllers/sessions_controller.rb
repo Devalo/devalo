@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
-
+  before_filter :set_up_shared_instance_variables
   def new
-    set_up_shared_instance_variables
+    
     if logged_in? 
       flash[:alert] = "Du er allerede logget inn."
       redirect_to root_path
@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
 
 
   def create
-    set_up_shared_instance_variables
+    
     user = User.find_by(email: params[:email])
       if user && user.authenticate(params[:password])
         session[:user_id] = user.id

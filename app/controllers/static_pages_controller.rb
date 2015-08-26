@@ -1,12 +1,12 @@
 class StaticPagesController < ApplicationController
- 
+  before_filter :set_up_shared_instance_variables
 
   def index
-    set_up_shared_instance_variables
+    
   end
 
   def prosessen
-    set_up_shared_instance_variables
+    
   end
 
 

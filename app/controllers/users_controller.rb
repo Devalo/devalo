@@ -1,35 +1,36 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :require_user
+  before_filter :set_up_shared_instance_variables
 
   # GET /users
   # GET /users.json
   def index
     @users = User.all
-    set_up_shared_instance_variables
+    
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
-    set_up_shared_instance_variables
+    
   end
 
   # GET /users/new
   def new
     @user = User.new
-    set_up_shared_instance_variables
+    
   end
 
   # GET /users/1/edit
   def edit
-    set_up_shared_instance_variables
+    
   end
 
   # POST /users
   # POST /users.json
   def create
-    set_up_shared_instance_variables
+    
     @user = User.new(user_params)
 
     respond_to do |format|
