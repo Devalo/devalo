@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   delete "/logout" => "sessions#destroy", as: :logout
 
   get 'admin' => 'admin_boards#index'
+  get 'admin/nyhetsbrev' => 'admin_boards#nyhetsbrev'
+  get 'admin/brukere' => 'admin_boards#brukere'
+  get 'admin/forsporsel' => 'admin_boards#foresporsel'
 
   root 'static_pages#index'   
   get 'prosessen' => 'static_pages#prosessen'

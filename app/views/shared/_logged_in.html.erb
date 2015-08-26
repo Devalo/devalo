@@ -1,0 +1,9 @@
+  <% if logged_in? %>
+<div class="logged_in_field">
+
+    Logget inn som <%= link_to current_user.email, current_user %> |
+    <%= link_to "Adminpanel", admin_path %> |
+    <%= link_to "Logg ut", logout_path, method: :delete %> 
+  
+</div>
+<% end %>
