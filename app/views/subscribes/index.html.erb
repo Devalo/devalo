@@ -1,29 +1,20 @@
-<p id="notice"><%= notice %></p>
+<%= render 'subscribes/subscribe_sidebar' %>
+      <div class="right_panel"><p id="notice"><%= notice %></p>
 
-<h1>Listing subscribes</h1>
+<h2>Alle mottakere av nyhetsbrev</h2>
 
-<table>
-  <thead>
-    <tr>
-     
-      <th>Email</th>
-      
-      <th colspan="2"></th>
-    </tr>
-  </thead>
-
-  <tbody>
     <% @subscribes.each do |subscribe| %>
-      <tr>
-      
-        <td><%= subscribe.email %></td>
+      <ul>
+        <li><%= subscribe.email %> | <%= link_to "Slett", subscribe, :method => :delete, :data => {:confirm => "Er du sikker?"} %></li>
+      </ul>
+
         
         
-      </tr>
+  
     <% end %>
   </tbody>
-</table>
-
 <br>
+
+</div>
 
 

@@ -26,6 +26,11 @@ class SubscribesController < ApplicationController
     end
   end
 
+  def destroy
+    Subscribe.find(params[:id]).destroy
+    redirect_to subscribes_path
+
+  end
 
 
 
@@ -37,6 +42,6 @@ class SubscribesController < ApplicationController
   end
 
   def set_user
-      @user = User.find(params[:id])
+      @subscribe = Subscribe.find(params[:id])
     end
 end
