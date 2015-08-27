@@ -1,33 +1,31 @@
-<p id="notice"><%= notice %></p>
+<%= render 'users/users_sidebar' %>
+      <div class="right_panel">
+      <p id="notice"><%= notice %></p>
 
-<h1>Listing Users</h1>
+<h2>Alle brukere</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>First name</th>
-      <th>Last name</th>
-      <th>Email</th>
-      
-      <th colspan="2"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.first_name %></td>
-        <td><%= user.last_name %></td>
-        <td><%= user.email %></td>
         
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+  
+
+  
+    <% @users.each do |user| %>
+      
+        <h4 class="user_name"><%= link_to "#{user.first_name} #{user.last_name}", edit_user_path(user) %> </h4>
+        
+        <p class="user_email"><%= user.email %></p>
+        <hr align="left" class="user_hr">
+        
+        
+        
+        
+      
     <% end %>
-  </tbody>
-</table>
+  
 
-<br>
 
-<%= link_to 'New User', new_user_path %>
+
+
+      </div>
+
+
+
