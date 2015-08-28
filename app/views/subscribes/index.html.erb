@@ -4,7 +4,7 @@
 <h2>Alle mottakere av nyhetsbrev</h2>
 
     <% @subscribes.each do |subscribe| %>
-      <ul>
+      <ul class="subscribe-list">
         <li><%= subscribe.email %> | <%= link_to "Slett", subscribe, :method => :delete, :data => {:confirm => "Er du sikker?"} %></li>
       </ul>
 
