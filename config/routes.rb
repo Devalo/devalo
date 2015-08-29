@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'admin' => 'admin_boards#index'
   get 'admin/nyhetsbrev' => 'subscribes#index'
   get 'admin/brukere' => 'users#index'
-  get 'admin/forsporsel' => 'admin_boards#foresporsel'
+  get 'admin/henvendelser' => 'admin_boards#henvendelser'
 
   root 'static_pages#index'   
   get 'prosessen' => 'static_pages#prosessen'
