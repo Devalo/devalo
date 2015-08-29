@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :static_pages 
   resources :subscribes
   resources :sessions, only: [:new, :create]
+  resources :contacts
 
   get "/login" => "sessions#new", as: :login
   delete "/logout" => "sessions#destroy", as: :logout
@@ -13,7 +14,9 @@ Rails.application.routes.draw do
   get 'admin/henvendelser' => 'admin_boards#henvendelser'
 
   root 'static_pages#index'   
-  get 'prosessen' => 'static_pages#prosessen'
+  get '/prosessen' => 'static_pages#prosessen' 
+  get 'kontakt', to: 'contacts#new', as: "kontakt"
+
 
 
 
