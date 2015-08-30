@@ -1,31 +1,32 @@
 <%= form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this user from being saved:</h2>
+     
 
       <ul>
-      <% @contact.errors.full_messages.each do |message| %>
+      <% @contact.errors.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
+<%= notice %>
   <div class="field">
-    <%= f.label :fornavn %><br>
-    <%= f.text_field :navn, placeholder: "Navn" %><br>
+    
+    <%= f.text_field :navn, placeholder: "Navn", class: "kontakt_skjema_text_field" %><br>
 
-    <%= f.label :telefon %><br>
-    <%= f.text_field :telefon, placeholder: "Telefonnummer" %><br>
+    
+    <%= f.text_field :telefon, placeholder: "Telefonnummer", class: "kontakt_skjema_text_field" %><br>
 
-    <%= f.label :epost %><br>
-    <%= f.text_field :epost, placeholder: "Epost-addresse" %><br>
+    
+    <%= f.text_field :epost, placeholder: "Epost-addresse", class: "kontakt_skjema_text_field" %><br>
 
-    <%= f.label :din_henvendelse %><br>
-    <%= f.text_area :henvendelse %>
+    
+    <%= f.text_area :henvendelse, placeholder: "Din henvendelse", class: "kontakt_skjema_text_area" %>
   </div>
   
   <div class="actions">
-    <%= f.submit "Lagre bruker" %>
+    <%= f.submit "Send", class: "btn btn-default kontakt_btn" %>
   </div>
 <% end %>
