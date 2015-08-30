@@ -27,8 +27,8 @@ en:
        too_long: 'er for langt'
        blank: 'må fylles ut'
      telefon:
-       too_short: '- Nummeret må være 8 tall'
-       too_long: '- Nummeeret må være 8 tall'
+       too_short: '- Nummeret er for kort (Minimum 8 tall)'
+       too_long: '- Nummeret er for langt (Maximum 8 tall)'
        not_a_number: "kan bare inneholde tall."
      henvendelse:
         too_short: 'er for kort'
