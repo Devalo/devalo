@@ -1,0 +1,21 @@
+<%= render 'contacts/contact_sidebar' %>
+      <div class="right_panel">
+      <p id="notice"><%= notice %></p>
+
+      <h2>Henvendelser sendt fra kontaktskjema</h2>
+
+
+      <% @contacts.each do |c| %>
+      
+        <p class="user_name"><%= link_to "Fra #{c.navn}, #{c.epost} - ",  c %>   <%= link_to "(Slett forespørsel)", c, method: :delete,
+                                  data: { confirm: "Er du sikker?" } %></p>
+        
+        
+        <hr align="left" class="user_hr">
+        
+        
+        
+        
+      
+    <% end %>
+      </div>
