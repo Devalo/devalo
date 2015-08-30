@@ -14,7 +14,8 @@ Rails.application.routes.draw do
   get 'admin/henvendelser' => 'contacts#index'
 
 
-  root 'static_pages#index'   
+  root 'static_pages#index'
+  get '/om' => 'static_pages#om'
   get '/prosessen' => 'static_pages#prosessen' 
   get 'kontakt', to: 'contacts#new', as: "kontakt"
 
