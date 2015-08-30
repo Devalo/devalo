@@ -1,0 +1,10 @@
+no:
+  errors:
+   attributes:
+     navn:
+       too_short: 'er for kort'
+       too_long: 'er for langt'
+     telefon:
+        too_short: 'er for kort'
+        too_long: 'er for langt'
+        present: 'hei'

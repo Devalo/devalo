@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
    def create 
     @contact = Contact.new(contact_params)
     if @contact.save
-      flash[:success] = "Takk for henvendelsen, vi vil svare deg så raskt som mulig."
+      flash.now[:info] = "Takk for henvendelsen, vi vil svare deg så raskt som mulig."
       redirect_to kontakt_path
     else
       render 'new'

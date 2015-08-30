@@ -7,3 +7,14 @@
 @import 'admin_boards';
 @import 'users';
 @import 'contacts';
+
+
+#error_explanation {
+  ul {
+    li {
+  list-style: none;
+  color: yellow;
+  
+}
+}
+}

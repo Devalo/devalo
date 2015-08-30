@@ -4,8 +4,8 @@ class Contact < ActiveRecord::Base
   validates :henvendelse, length: { minimum: 10, maximum: 500},
                           presence: true
   validates :navn, presence: true, length: { minimum: 4, maximum: 50 }
-  validates :epost, length: { minimum: 4, too_short: "Eposten må inneholde minst 4 tegn. ", 
-                              maximum: 70, too_long: "Eposten kan ikke inneholde over 70 tegn" },
+  validates :epost, length: { minimum: 4, 
+                              maximum: 70},
                               format: { with: VALID_EMAIL_REGEX }
 
 
