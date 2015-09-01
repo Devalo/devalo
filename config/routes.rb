@@ -17,7 +17,8 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   get '/om' => 'static_pages#om'
   get '/prosessen' => 'static_pages#prosessen' 
-  get 'kontakt', to: 'contacts#new', as: "kontakt"
+  #get 'kontakt', to: 'contacts#new', as: "kontakt"
+  #get 'kontakt' => 'contacts#new'
 
 
 
