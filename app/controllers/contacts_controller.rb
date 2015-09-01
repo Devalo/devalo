@@ -19,7 +19,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       flash.now[:info] = "Takk for henvendelsen, vi vil svare deg så raskt som mulig."
-      redirect_to kontakt_path
+      redirect_to root_url
     else
       render 'new'
     end
