@@ -2,13 +2,49 @@
   background: url(main-bg-flip.png);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 107, 92,0.55);
-  
- p {
-  color: #333;
+  box-shadow: inset 0 0 0 1000px rgba(177,170,230,.9);
+  padding-bottom:8%;
+  .left_side {
+    border-radius: 5px;
+    padding: 5px;
+    
+    margin-bottom: 50px;
+    margin-top: 10px;
+
+    p {
+      color: #fff;
+      font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 600;
+      text-shadow: 0px 0px 1px #000;
+
+  }
  }
 
+ .right_side {
+  border-radius: 5px;
+    padding: 5px;
+    
+    
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+
+  .prosessen_image {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
 }
+
+ p {
+      color: #fff;
+      font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 600;
+      text-shadow: 0px 0px 1px #000;
+
+  }
+ }
+}
+
 
 .om_headline {
 
@@ -18,5 +54,22 @@
 
 .prosessen_headline {
   color: #fff;
-  text-align: center;
+  
+
 }
+
+
+.om_bilde {
+  width: 63%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+
+
+
+
+
+
