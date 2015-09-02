@@ -20,21 +20,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-#  errors:
-#   attributes:
-#     navn:
-#       too_short: 'er for kort'
-#       too_long: 'er for langt'
-#       blank: 'må fylles ut'
-#     telefon:
-#       too_short: '- Nummeret er for kort (Minimum 8 tall)'
-#       too_long: '- Nummeret er for langt (Maximum 8 tall)'
-#       not_a_number: "kan bare inneholde tall."
-#     henvendelse:
-#        too_short: 'er for kort'
-#        blank: 'må fylles ut'
-#     epost:
-#       too_short: 'er for kort (Minimum 4 tegn)'
-#       too_long: 'er for langt (Maximum 70 tegn)'
-#       invalid: "er ikke skrevet riktig."
+ # hello: "Hello world"
+  errors:
+   attributes:
+     navn:
+       too_short: 'er for kort'
+       too_long: 'er for langt'
+       blank: 'må fylles ut'
+     telefon:
+       too_short: '- Nummeret er for kort (Minimum 8 tall)'
+       too_long: '- Nummeret er for langt (Maximum 8 tall)'
+       not_a_number: "kan bare inneholde tall."
+     henvendelse:
+        too_short: 'er for kort'
+        blank: 'må fylles ut'
+     epost:
+       too_short: 'er for kort (Minimum 4 tegn)'
+       too_long: 'er for langt (Maximum 70 tegn)'
+       invalid: "er ikke skrevet riktig."
