@@ -111,13 +111,14 @@ body {
 
   #slide_p1, #slide_p2{
     color: #363636;
-    padding: 2px;
-    width: 400px;
+    padding: 3px;
+    width: 320px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif; font-weight: 600;
     left: -1000px;
     background: rgba(177, 170, 230, .7);
     position: relative;
+    text-align: center;
   }
 
   #slide_image {
@@ -343,6 +344,11 @@ footer {
       h3 {
         font-family: 'Play', sans-serif; font-weight: 700;
         color: #ffde63;
+      }
+      p {
+        font-family: 'Open Sans', sans-serif; font-weight: 700;
+        font-size: 15px;
+        padding: 1px;
       }
 
       .facebook-png {
